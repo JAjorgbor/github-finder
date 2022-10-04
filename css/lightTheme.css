@@ -1,0 +1,59 @@
+body {
+  background-color: white;
+  color: rgb(70, 66, 66);
+}
+
+nav {
+  border-bottom: 1px solid rgb(70, 66, 66);
+}
+
+.github-logo {
+  color: rgb(70, 66, 66);
+}
+
+.form-container {
+  padding: 1rem 1rem;
+  background-color: rgb(238, 232, 232);
+  border-radius: 10px;
+}
+
+form input[type=text] {
+  background-color: silver;
+  color: black;
+}
+form i {
+  color: #60ABFF;
+}
+
+.profile-info-container {
+  padding: 1rem 1rem;
+  background-color: rgb(238, 232, 232);
+  border-radius: 10px;
+}
+.profile-info-container button {
+  background-color: #60ABFF;
+}
+.profile-info-container button:hover {
+  box-shadow: 0 2px 10px #60ABFF;
+}
+
+.repos-container {
+  padding: 1rem 1rem;
+  background-color: rgb(238, 232, 232);
+  border-radius: 10px;
+}
+
+.theme-toggle {
+  background-color: rgb(236, 232, 232);
+}
+.theme-toggle span {
+  color: rgb(109, 106, 106);
+}
+
+.toggle-button {
+  background-color: rgb(70, 66, 66);
+}
+
+footer .attribution a {
+  color: #60ABFF;
+}/*# sourceMappingURL=lightTheme.css.map */

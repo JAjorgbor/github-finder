@@ -1,0 +1,36 @@
+@use "mixins" as *;
+@use "variables" as *;
+.nav_container{
+    @include screenSize(){
+        width:70%;
+    }
+    @include screenSize(800px){
+        width:65%;
+    }
+}
+form{
+    input[type=text]{
+        @include screenSize(900px){
+            text-indent:6%;
+        }
+    }
+}
+.container{
+    @include screenSize(){
+        width:70%;
+    }
+    @include screenSize(800px){
+        width:65%;
+    }
+    // @include screenSize(900px){
+    //     width:50%;
+    // }
+}
+.profile-info-container{
+    @include screenSize(800px){
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        // align-items:center;
+        gap:1rem;
+    }
+}

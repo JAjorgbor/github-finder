@@ -1,0 +1,64 @@
+
+@use "mixins" as *;
+@use "variables" as *;
+body{
+    background-color:white;
+    color:$textColorLight;
+}
+nav{
+    border-bottom:1px solid $textColorLight
+
+}
+.github-logo{
+    color:$textColorLight;
+
+}
+.form-container{
+    @include sectionBackgroundColor($backgroundLight);
+    // margin-top:0;
+
+ 
+ }
+ form{
+    input[type=text]{
+        background-color:silver;
+        color:black;
+    }
+    i{
+        color:$lightBlue;
+
+    }
+ }
+ .profile-info-container{
+    @include sectionBackgroundColor($backgroundLight);
+    
+    button{
+        background-color:$lightBlue;
+
+
+    }
+    button:hover{
+        box-shadow:0 2px 10px $lightBlue;
+    }
+}
+.repos-container{
+    @include sectionBackgroundColor($backgroundLight);
+}
+.theme-toggle{
+    background-color:rgb(236, 232, 232);
+span{
+   color:rgb(109, 106, 106);
+}
+}
+.toggle-button{
+    background-color:$textColorLight;
+    }
+    footer{
+        .attribution{
+            a{
+                color:$lightBlue;
+                
+            }
+        }
+    }
+    

@@ -1,0 +1,241 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    transition:background-color 1s, color 1s;
+    transition-timing-function:ease-in-out;
+}
+body{
+
+    font-family: 'Chakra Petch', sans-serif;
+}
+nav{
+    width:100%;
+    padding: 1rem 0;
+}
+.nav_container{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+}
+h1{
+    font-size:2.1rem;
+    
+}
+.github-logo{
+    font-size:1.5rem;
+}
+.theme-toggle{
+    cursor:pointer;
+    background-color:$backgroundDark;
+    width:4.3rem;
+    padding:0.2rem 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    overflow:hidden;
+    position:relative;
+span{
+    position:absolute;
+}
+.toggle-button{
+width:38%;
+height:80%;
+// background-color:red;
+border-radius:50%;
+top:10%;
+left:5%;
+transition:left 1s;
+transition-timing-function: ease-in-out;
+
+}
+.light-theme{
+    top:10%;
+    right:10%;
+    transition:1s;
+    transition-timing-function: ease-in-out;
+} 
+
+    .dark-theme{
+        bottom:-100%;
+        transition: bottom 1s;
+    transition-timing-function: ease-in-out;
+
+    // transition-delay: 0.5s;
+
+    }
+}
+.theme-toggle-pressed{
+    .toggle-button{
+        left:55%;
+        top:10%;
+    }
+    .light-theme{
+        top:-100%;
+        right:10%;
+    }
+    .dark-theme{
+        bottom:8%;
+        // right:10%;
+        // transition:all 1s;
+    } 
+    
+}
+.container{
+    width:95%;
+    margin:auto;
+}
+.error-message{
+    background-color: rgb(228, 27, 27);
+    color:white;
+    padding:0.5rem;
+    border-radius:5px;
+    transform-origin:top;
+    transform:scale(1,0);
+    transition: transform 0.5s;
+}
+
+ .error-message-pop-up{
+    transform:scale(1);
+ }
+ 
+
+form{
+    position: relative;
+    i{
+        position: absolute;
+        left:3%;
+        bottom:12px;
+        font-size:1.3rem;
+        // color:$lightBlue;
+        }
+    input[type=text]{
+        display:block;
+        width:100%;
+        padding:1rem 0.8rem;
+        border-radius:20px;
+        border:none;
+        margin-top:1rem;
+        
+        font-size:1rem;
+        outline:none;
+        text-indent: 8%;
+    }
+}
+.profile-info-container{
+    margin-top:1.2rem;
+
+}
+.profile-pic-container{
+    width:100%;
+    margin-bottom:1rem;
+    img{
+        width:100%;
+        height:260px;
+        // object-fit:cover;
+        border-radius:10px;
+    }
+    button{
+        cursor:pointer;
+        width:100%;
+        padding:0.8rem;
+        border-radius:20px;
+        border:none;
+        // background-color:$lightBlue;
+        margin-top:0.5rem;
+        a{
+            text-decoration: none;
+            font-family: inherit;
+            color:white;
+            font-size:0.9rem;
+        }
+    }
+    
+    
+}
+.repos-title{
+    margin:1.2rem 0 1.2rem 1.2rem;
+}
+.profile-details{
+    .extra-info{
+        margin-bottom:1rem;
+        display:flex;
+        flex-wrap:wrap;
+    span{
+        border:1px solid silver;
+        padding:0.5rem;
+        margin:0.2rem;
+    }
+    .name{
+        margin:0;
+    }
+}
+p{
+    padding:0.5rem 0;
+    border-bottom:1px solid silver
+}
+.user-login{
+    padding:0.2;
+    border-bottom:none;
+    span{
+    font-size:1.2rem;
+    font-weight:500;
+    } 
+}
+}
+
+.repos-container{
+  
+    .repo{
+        
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        border-bottom: 1px solid silver;
+        padding: 0.5rem 0;
+        a{
+            color:inherit;
+            text-decoration:none;
+            transition:font-weight 0.5s;
+        }
+        a:hover{
+            font-weight:bold;
+        }
+        .points{
+            display:flex;
+            flex-wrap:wrap;
+        
+        span{
+            margin:0 0.2rem;
+            padding:0.1rem 0.2rem;
+            border-radius: 5px;
+            color:white
+        }
+        .detail-stars{
+            background-color:rgb(74, 74, 172);
+
+        }
+        .detail-watchers{
+            background-color:rgb(175, 110, 25);
+        }
+        .detail-forks{
+            background-color:rgb(45, 194, 45);
+        }
+        }
+    }
+}
+footer{
+    margin-top:1rem;
+    padding:1rem 1.5rem 0.2rem;
+    .attribution{
+        text-align:center;
+        font-size:0.8rem;
+        a{
+            
+            text-decoration: none;
+        }
+    }
+}

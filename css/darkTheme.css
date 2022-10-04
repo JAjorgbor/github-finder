@@ -1,0 +1,52 @@
+body {
+  background-color: #141D2F;
+  color: #bcc4c9;
+}
+
+nav {
+  border-bottom: 1px solid silver;
+}
+
+.github-logo {
+  color: white;
+}
+
+.form-container {
+  padding: 1rem 1rem;
+  background-color: #1E2A47;
+  border-radius: 10px;
+}
+
+form i {
+  color: rgb(46, 46, 202);
+}
+form input[type=text] {
+  background-color: #18202e;
+  color: white;
+}
+
+.profile-info-container {
+  padding: 1rem 1rem;
+  background-color: #1E2A47;
+  border-radius: 10px;
+}
+.profile-info-container button {
+  background-color: rgb(46, 46, 202);
+}
+.profile-info-container button:hover {
+  box-shadow: 0 2px 10px rgb(46, 46, 202);
+}
+
+.repos-container {
+  padding: 1rem 1rem;
+  background-color: #1E2A47;
+  border-radius: 10px;
+}
+
+.toggle-button {
+  background-color: white;
+}
+
+footer .attribution a {
+  color: rgb(46, 46, 202);
+}/*# sourceMappingURL=darkTheme.css.map */

@@ -1,0 +1,54 @@
+
+@use "mixins" as *;
+@use "variables" as *;
+body{
+    background-color:$pageColorDark;
+    color:$textColorDark;
+}
+nav{
+    border-bottom:1px solid silver;
+
+}
+.github-logo{
+    color:white;
+
+}
+.form-container{
+    @include sectionBackgroundColor($backgroundDark);
+    // margin-top:0;
+ 
+ }
+ form{
+     i{
+        color:$blue;
+
+     }
+    input[type=text]{
+        background-color:$searchBackgroundDark;
+        color:white;
+    }
+ }
+ .profile-info-container{
+    @include sectionBackgroundColor($backgroundDark);
+    button{
+        background-color:$blue;
+    }
+    button:hover{
+        box-shadow:0 2px 10px $blue;
+    }
+}
+.repos-container{
+    @include sectionBackgroundColor($backgroundDark)
+}
+.toggle-button{
+background-color:white;
+
+}
+footer{
+    .attribution{
+        a{
+            color:$blue;
+
+        }
+    }
+}
