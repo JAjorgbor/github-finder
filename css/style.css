@@ -78,7 +78,7 @@ h1 {
 }
 
 .container {
-  width: 95%;
+  width: 90%;
   margin: auto;
 }
 
@@ -239,14 +239,24 @@ footer .attribution a {
   }
 }
 
+@media screen and (min-width: 500px) {
+  .container {
+    width: 80%;
+  }
+}
 @media screen and (min-width: 600px) {
   .container {
-    width: 70%;
+    width: 60%;
   }
 }
 @media screen and (min-width: 800px) {
   .container {
-    width: 65%;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 70%;
   }
 }
 

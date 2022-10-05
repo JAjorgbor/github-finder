@@ -16,11 +16,17 @@ form{
     }
 }
 .container{
+    @include screenSize(500px){
+        width:80%;
+    }
     @include screenSize(){
-        width:70%;
+        width:60%;
     }
     @include screenSize(800px){
-        width:65%;
+        width:90%;
+    }
+    @include screenSize(1000px){
+        width:70%;
     }
     // @include screenSize(900px){
     //     width:50%;

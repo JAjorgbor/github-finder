@@ -3,7 +3,6 @@
     padding:1rem 1rem;
     background-color:$background-color;
     border-radius:10px;
-    // margin-top:1.2rem;
 }
 @mixin screenSize($screenWidth:600px){
     @media screen and (min-width:$screenWidth){
