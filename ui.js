@@ -4,10 +4,14 @@ const Ui= function(){
 
 }
 convertTime=(time)=>{
-    return new Date(time).toLocaleString('en-us',{
-        year:"numeric",
+    return new Date(time).toLocaleString('en-gb',{
+        weekday:"long",
+        hour:"2-digit",
+        minute:"numeric",
+        day:"numeric",
         month:"long",
-        day:"numeric"
+        year:"numeric",
+        hour12:true
     })
 }
 Ui.prototype.themeSwitcher=function(themeToggle){
