@@ -127,7 +127,9 @@ form input[type=text] {
 }
 .profile-pic-container img {
   width: 100%;
-  height: 260px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 .profile-pic-container button {
@@ -222,14 +224,24 @@ footer .attribution a {
   text-decoration: none;
 }
 
+@media screen and (min-width: 500px) {
+  .nav_container {
+    width: 80%;
+  }
+}
 @media screen and (min-width: 600px) {
   .nav_container {
-    width: 70%;
+    width: 60%;
   }
 }
 @media screen and (min-width: 800px) {
   .nav_container {
-    width: 65%;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .nav_container {
+    width: 70%;
   }
 }
 

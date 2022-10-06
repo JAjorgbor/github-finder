@@ -1,11 +1,17 @@
 @use "mixins" as *;
 @use "variables" as *;
 .nav_container{
+    @include screenSize(500px){
+        width:80%;
+    }
     @include screenSize(){
-        width:70%;
+        width:60%;
     }
     @include screenSize(800px){
-        width:65%;
+        width:90%;
+    }
+    @include screenSize(1000px){
+        width:70%;
     }
 }
 form{
