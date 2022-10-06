@@ -11,7 +11,7 @@ Github.prototype.getUser=function(error,user,callback,forbidden){
         user="joshuaAj003";
     }    
     const http=new XMLHttpRequest();
-    const url=`https://api.github.com/users/${user}?client_id=${this.clientId}&client_secret${this.clientSecret}`
+    const url=`https://api.github.com/users/${user}?client_id=${this.clientId}&client_secret=${this.clientSecret}`
       http.open("GET",url,true);
       http.onload= ()=>{  
         if(user!=="" && !user.includes(" ")){
