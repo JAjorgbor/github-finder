@@ -40,7 +40,7 @@ Github.prototype.getUserRepos= (error,user)=>{
     user="joshuaAj003";
 }    
 if(user!=="" && !user.includes(" ")){
-    const Repourl=`https://api.github.com/users/${user}/repos?per_page=5&sort=${this.reposSort}&client_id=${this.clientId}&client_secret${this.clientSecret}`;
+    const Repourl=`https://api.github.com/users/${user}/repos?per_page=5&sort=${this.reposSort}&client_id=${this.clientId}&client_secret=${this.clientSecret}`;
     
             return new Promise((resolve)=>{
                 http.open("GET",Repourl,true);

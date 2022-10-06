@@ -3,6 +3,13 @@ const Ui= function(){
     this.clicked=true;
 
 }
+convertTime=(time)=>{
+    return new Date(time).toLocaleString('en-us',{
+        year:"numeric",
+        month:"long",
+        day:"numeric"
+    })
+}
 Ui.prototype.themeSwitcher=function(themeToggle){
     themeToggle.classList.toggle("theme-toggle-pressed");
     if(this.clicked){
@@ -51,7 +58,7 @@ Ui.prototype.showProfile=function(userInfo){
 <p>company: ${userInfo.company}</p>
 <p>website/blog: ${userInfo.blog}</p>
 <p>Location: ${userInfo.location}</p>
-<p>Member since: ${userInfo.created_at}</p>
+<p>Member since: ${convertTime(userInfo.created_at)}</p>
 </div>`
 }
 
