@@ -8,7 +8,7 @@ const Github= function(){
 
 Github.prototype.getUser=function(error,user,callback,forbidden){
     if(user==undefined){    
-        user="joshuaAj003";
+        user="JAjorgbor";
     }    
     const http=new XMLHttpRequest();
     const url=`https://api.github.com/users/${user}?client_id=${this.clientId}&client_secret=${this.clientSecret}`
@@ -37,7 +37,7 @@ Github.prototype.getUser=function(error,user,callback,forbidden){
 Github.prototype.getUserRepos= (error,user)=>{
     const http= new XMLHttpRequest;
     if(user==undefined){    
-    user="joshuaAj003";
+    user="JAjorgbor";
 }    
 if(user!=="" && !user.includes(" ")){
     const Repourl=`https://api.github.com/users/${user}/repos?per_page=5&sort=${this.reposSort}&client_id=${this.clientId}&client_secret=${this.clientSecret}`;

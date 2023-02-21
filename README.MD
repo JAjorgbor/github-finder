@@ -32,7 +32,7 @@ Users should be able to:
 ![](./screenshot.png)
 
 ### Links
-- Live Site URL: [cick here to see the live site](https://joshuaaj003.github.io/github-finder/)
+- Live Site URL: [cick here to see the live site](https://JAjorgbor.github.io/github-finder/)
 
 ## My process
 I built the layout with html and scss with relevant breakpoints for responsiveness, afterwhich I used the Github profile Api by using the XMLHttpRequest method to generate user data and javasctipt to output the data on the Dom. 
@@ -53,7 +53,7 @@ I learnt how to use javascript Es5 object oriented programing feautures such as 
 ```js
 Github.prototype.getUser=function(error,user,callback,forbidden){
     if(user==undefined){    
-        user="joshuaAj003";
+        user="JAjorgbor";
     }    
     const http=new XMLHttpRequest();
     const url=`https://api.github.com/users/${user}?client_id=${this.clientId}&client_secret${this.clientSecret}`
